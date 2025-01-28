@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tocar el Piano</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="/src/css/pianoPage.css">
+</head>
+
+<body class="pianoBody">
+    <section class="content">
+        <div class="piano-container">
+            <div id="piano">
+                <div class="white-keys">
+                    <!-- First octave -->
+                    <div class="white-key" data-note="Do" data-key="a" data-keycode="65"></div>
+                    <div class="white-key" data-note="Re" data-key="s" data-keycode="83"></div>
+                    <div class="white-key" data-note="Mi" data-key="d" data-keycode="68"></div>
+                    <div class="white-key" data-note="Fa" data-key="f" data-keycode="70"></div>
+                    <div class="white-key" data-note="Sol" data-key="g" data-keycode="71"></div>
+                    <div class="white-key" data-note="La" data-key="h" data-keycode="72"></div>
+                    <div class="white-key" data-note="Si" data-key="j" data-keycode="74"></div>
+                    <!-- Second octave -->
+                    <div class="white-key" data-note="Do2" data-key="k" data-keycode="75"></div>
+                    <div class="white-key" data-note="Re2" data-key="l" data-keycode="76"></div>
+                    <div class="white-key" data-note="Mi2" data-key="ñ" data-keycode="186"></div>
+                    <div class="white-key" data-note="Fa2" data-key="´" data-keycode="222"></div>
+                    <div class="white-key" data-note="Sol2" data-key="z" data-keycode="90"></div>
+                    <div class="white-key" data-note="La2" data-key="x" data-keycode="88"></div>
+                    <div class="white-key" data-note="Si2" data-key="c" data-keycode="67"></div>
+                </div>
+                <div class="black-keys-container">
+                    <!-- Primera octava -->
+                    <div class="black-key" data-note="Do#" data-key="w" data-keycode="87"></div>
+                    <div class="black-key" data-note="Re#" data-key="e" data-keycode="69"></div>
+                    <div class="black-key" data-note="Fa#" data-key="t" data-keycode="84"></div>
+                    <div class="black-key" data-note="Sol#" data-key="y" data-keycode="89"></div>
+                    <div class="black-key" data-note="La#" data-key="u" data-keycode="85"></div>
+                    <!-- Segunda octava -->
+                    <div class="black-key" data-note="Do#2" data-key="i" data-keycode="73"></div>
+                    <div class="black-key" data-note="Re#2" data-key="o" data-keycode="79"></div>
+                    <div class="black-key" data-note="Fa#2" data-key="p" data-keycode="80"></div>
+                    <div class="black-key" data-note="Sol#2" data-key="`" data-keycode="219"></div>
+                    <div class="black-key" data-note="La#2" data-key="+" data-keycode="187"></div>
+                </div>
+            </div>
+        </div>
+
+        <section class="infoSection">
+            <img class="iconoPiano" src="/public/img/piano_galeria.png" alt="icono de un piano">
+            <div class="text-content">
+                <h2>Aprende piano!</h2>
+                <p>Es muy sencillo, hac clic sobre las teclas y podrás tocar cualquier canción.</p>
+            </div>
+        </section>
+        <div class="accordion">
+            <div class="accordion-item">
+                <button class="accordion-header active">¿Cómo tocar el piano?<img
+                        src="/public/img/FLECHAS.png"></button>
+                <div class="accordion-content active">
+                    <p>¡Tocar el piano nunca fue tan fácil! Solo haz clic en las teclas virtuales o utiliza las teclas
+                        de tu teclado como atajos para reproducir notas. Experimenta con diferentes combinaciones y crea
+                        tu propia música desde cualquier lugar. ¡Empieza a tocar ahora!</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header">Tutorial en video<img src="/public/img/FLECHAS.png"></button>
+                <div class="accordion-content">
+                    <p>Aprende los conceptos básicos del piano con nuestro tutorial interactivo. Descubre cómo tocar
+                        escalas, acordes y canciones sencillas paso a paso, ¡perfecto para principiantes! Explora este
+                        recurso para dominar las notas y mejorar tu técnica rápidamente.</p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/kAALQ4JEY6c?si=wgfL1-o-R1fFCn5f"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header">Vídeo<img src="/public/img/FLECHAS.png"></button>
+                <div class="accordion-content">
+                    <p>¿Prefieres aprender viendo? Mira nuestro video exclusivo donde te mostramos cómo aprovechar al
+                        máximo este piano virtual. Desde las notas más simples hasta consejos para tocar como un
+                        profesional. ¡Dale play y disfruta!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="/src/js/instrument.js"></script>
+    <script src="/src/js/accordion.js"></script>
+</body>
+
+</html>

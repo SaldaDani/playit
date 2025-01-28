@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+* {
+    box-sizing: border-box;
+}
 
 body {
     background: linear-gradient(180deg, #04bed4 0%, #0e095c 100%);
@@ -32,10 +35,8 @@ body {
     content: '';
     position: absolute;
     top: 45px;
-    left: 0px;
-    /* Reducido de 40px a 20px */
-    right: 0px;
-    /* Reducido de 40px a 20px */
+    left: 0px;    /* Reducido de 40px a 20px */
+    right: 0px;    /* Reducido de 40px a 20px */
     height: 20px;
     background-color: white;
     z-index: 2;
@@ -123,61 +124,20 @@ body {
 .black-key:hover {
     background-color: #333;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.4),
-        0 3px 3px rgba(0, 0, 0, 0.2);
+                0 3px 3px rgba(0, 0, 0, 0.2);
 }
-
 /* Alineando las teclas negras de ambas octavas */
-.black-key:nth-child(1) {
-    left: 45px;
-}
-
-/* Do# */
-.black-key:nth-child(2) {
-    left: 115px;
-}
-
-/* Re# */
-.black-key:nth-child(3) {
-    left: 260px;
-}
-
-/* Fa# */
-.black-key:nth-child(4) {
-    left: 335px;
-}
-
-/* Sol# */
-.black-key:nth-child(5) {
-    left: 405px;
-}
-
-/* La# */
+.black-key:nth-child(1) { left: 45px; }  /* Do# */
+.black-key:nth-child(2) { left: 115px; }  /* Re# */
+.black-key:nth-child(3) { left: 260px; } /* Fa# */
+.black-key:nth-child(4) { left: 335px; } /* Sol# */
+.black-key:nth-child(5) { left: 405px; } /* La# */
 /* Segunda octava */
-.black-key:nth-child(6) {
-    left: 550px;
-}
-
-/* Do# */
-.black-key:nth-child(7) {
-    left: 620px;
-}
-
-/* Re# */
-.black-key:nth-child(8) {
-    left: 765px;
-}
-
-/* Fa# */
-.black-key:nth-child(9) {
-    left: 840px;
-}
-
-/* Sol# */
-.black-key:nth-child(10) {
-    left: 910px;
-}
-
-/* La# */
+.black-key:nth-child(6) { left: 550px; } /* Do# */
+.black-key:nth-child(7) { left: 620px; } /* Re# */
+.black-key:nth-child(8) { left: 765px; } /* Fa# */
+.black-key:nth-child(9) { left: 840px; } /* Sol# */
+.black-key:nth-child(10) { left: 910px; } /* La# */
 
 
 
@@ -196,7 +156,6 @@ body {
     height: 140px;
     margin-top: 20px;
 }
-
 .infoSection h2 {
     font-size: 70px;
     margin: 0;
@@ -214,87 +173,72 @@ body {
 }
 
 .accordion {
-    width: 85%;
-    justify-self: center;
-    margin-top: 40px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .accordion-item {
-    margin-bottom: 10px;
+    width: 100%;
+    position: relative;
 }
 
 .accordion-header {
+    position: relative;
+    padding: 0 10px;
     width: 100%;
-    padding: 15px 20px;
-    background: linear-gradient(90deg, #ffffff 30%, #a7a7a7 100%);
-    border: none;
-    text-align: left;
-    font-size: 30px;
-    color: #333;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
+    background: linear-gradient(90deg, #ffffff 20%, #b7b7b7 100%);
+    height: 80px;
+    font-size: 28px;
     align-items: center;
-    transition: background-color 0.3s ease;
+    display: flex;
+    cursor: pointer;
 }
 
-.accordion-header img {
-    width: 40px;
-    height: 40px;
-    transition: transform 0.6s ease;
-}
-
-.accordion-header.active img {
-    transform: rotate(180deg);
+.accordion-header::before {
+    right: 5%;
+    position: absolute;
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-image: url('/public/img/FLECHAS.png');
+    background-size: cover;
+    background-position: center;
 }
 
 .accordion-content {
-    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: white;
-    padding: 0 20px;
+    padding: 20px;
     max-height: 0;
-    opacity: 0;
+    position: relative;
     overflow: hidden;
-    transition: max-height 0.8s ease, opacity 0.8s ease 0.8s;
-    visibility: hidden;
+    font-size: 20px;
+    width: 100%;
+    transition: 0.5s;
+    text-align: justify;
+    background: black;
+    opacity: 0;
 }
 
-.accordion-content.active {
-    max-height: 600px;
-    /* Aumentado para acomodar el video */
+.accordion .accordion-item.active .accordion-content{
+    max-height: 2000px;
     opacity: 1;
-    visibility: visible;
-    transition: max-height 0.8s ease, opacity 0.8s ease;
-    padding: 20px;
+    margin-bottom: 40px;
+
+}
+
+.accordion .accordion-item.active .accordion-header::before {
+    transform: rotate(180deg);
+    transition: 0.5s;
 }
 
 .accordion-content iframe {
-    width: 100%;
-    max-width: 760px;
-    height: 355px;
-    margin: 10px auto;
-    display: block;
+    width: 80%;
+    height: 400px;
 }
-
-.accordion-content {
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
-    padding: 0 20px;
-    max-height: 0;
-    opacity: 0;
-    overflow: hidden;
-    transition: max-height 0.8s ease, opacity 0.8s ease 0.8s;
-    visibility: hidden;
-}
-
-.accordion-content.active {
-    height: auto;
-    opacity: 1;
-    visibility: visible;
-    transition: max-height 0.8s ease, opacity 0.8s ease;
-    padding: 20px;
-}
-
 
 @media (max-width: 768px) {
     .content {
@@ -311,12 +255,9 @@ body {
 
     .piano-container {
         transform: rotate(90deg);
-        margin-top: 200px;
-        /* Espacio para la rotación */
-        margin-bottom: 200px;
-        /* Espacio para la rotación */
-        scale: 0.75;
-        /* Reducir tamaño en móvil */
+        margin-top: 200px;  /* Espacio para la rotación */
+        margin-bottom: 200px;  /* Espacio para la rotación */
+        scale: 0.75;  /* Reducir tamaño en móvil */
     }
 
     .infoSection {

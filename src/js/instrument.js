@@ -50,7 +50,7 @@ function createPianoSound(frequency) {
     filter.connect(compressor);
     compressor.connect(audioContext.destination);
 
-    // Creación de múltiples osciladores para un sonido más rico
+    // Crear varios osciladores con diferentes tipos y detune
     const oscillators = [
         { type: 'sine', gain: 0.5, detune: 0 },
         { type: 'triangle', gain: 0.2, detune: 3 },

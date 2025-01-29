@@ -13,6 +13,7 @@
     height: 140px;
     margin-top: 20px;
 }
+
 .infoSection h2 {
     font-size: 70px;
     margin: 0;
@@ -80,7 +81,7 @@
     opacity: 0;
 }
 
-.accordion .accordion-item.active .accordion-content{
+.accordion .accordion-item.active .accordion-content {
     max-height: 2000px;
     opacity: 1;
     margin-bottom: 40px;
@@ -98,5 +99,36 @@
 }
 
 @media (max-width: 768px) {
+    .infoSection {
+        margin-top: 40px;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
 
+    .instrumentIcon {
+        width: 100px;
+        height: 100px;
+
+    }
+
+    .infoSection .text-content {
+        align-items: center;
+    }
+
+    .infoSection h2 {
+        font-size: 24px;
+    }
+
+    .infoSection p {
+        font-size: 16px;
+    }
+
+    .accordion {
+        width: 100%;
+    }
+
+    .accordion-header {
+        font-size: 25px;
+    }
 }

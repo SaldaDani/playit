@@ -1,0 +1,71 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(180deg, #04bed4 0%, #0e095c 100%);
+    font-family: poppins;
+}
+
+.form-container {
+    background: #04bed4;
+    padding: 60px;
+    border-radius: 20px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    margin: auto;
+}
+
+h2 {
+    color: white;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: poppins;
+}
+
+textarea {
+    height: 80px;
+    resize: none;
+    font-size: 14px;
+}
+
+.nombre-apellido {
+    display: flex;
+    gap:50px;
+    justify-content: space-between;
+}
+
+.nombre-apellido input {
+    width: 50%;
+}
+
+button {
+    background:#0e095c;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: darkblue;
+}
+
+/* Azul oscuro #0e095c */
+/* Azul claro #04bed4 */
+/* fuentes: poppins */

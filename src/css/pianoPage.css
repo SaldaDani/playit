@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(180deg, #04bed4 0%, #0e095c 100%);
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    width: 100%;
+    max-width: 1008px;
+    margin-top: 40px;
+
+}
+
+.piano-container {
+    padding: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.piano-container::before {
+    content: '';
+    position: absolute;
+    top: 45px;
+    left: 14px;
+    right: 14px; 
+    height: 20px;
+    background-color: white;
+    z-index: 2;
+    border: #B9B9B9 solid 1px;
+}
+
+#piano {
+    height: 200px;
+    padding: 30px 40px;
+    display: flex;
+    position: relative;
+    margin-bottom: 120px;
+}
+
+.white-keys {
+    display: flex;
+}
+
+.white-key {
+    width: 70px;
+    height: 300px;
+    background-color: white;
+    border: 1px solid #B9B9B9;
+    border-radius: 0 0 2px 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+.white-key::after {
+    content: attr(data-key);
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    font-weight: bold;
+    color: #666;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-transform: uppercase;
+}
+
+.black-key::after {
+    content: attr(data-key);
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-transform: uppercase;
+}
+
+
+.piano-container:hover .white-key::after,
+.piano-container:hover .black-key::after {
+    opacity: 1;
+}
+
+.white-key:hover {
+    background-color: #f0f0f0;
+}
+
+.black-keys-container {
+    position: absolute;
+    display: flex;
+    top: 30px;
+    left: 42px;
+}
+
+.black-key {
+    width: 50px;
+    height: 200px;
+    background-color: black;
+    border-radius: 0 0 3px 3px;
+    cursor: pointer;
+    z-index: 1;
+    position: absolute;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.black-key:hover {
+    background-color: #333;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4),
+                0 3px 3px rgba(0, 0, 0, 0.2);
+}
+/* Alineando las teclas negras de ambas octavas */
+.black-key:nth-child(1) { left: 45px; }  /* Do# */
+.black-key:nth-child(2) { left: 115px; }  /* Re# */
+.black-key:nth-child(3) { left: 260px; } /* Fa# */
+.black-key:nth-child(4) { left: 335px; } /* Sol# */
+.black-key:nth-child(5) { left: 405px; } /* La# */
+/* Segunda octava */
+.black-key:nth-child(6) { left: 550px; } /* Do# */
+.black-key:nth-child(7) { left: 620px; } /* Re# */
+.black-key:nth-child(8) { left: 765px; } /* Fa# */
+.black-key:nth-child(9) { left: 840px; } /* Sol# */
+.black-key:nth-child(10) { left: 910px; } /* La# */
+
+@media (max-width: 768px) {
+    .content {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .piano-container::before {
+        right: 60px;
+        left: 60px;
+    }
+
+    .piano-container {
+        transform: rotate(90deg);
+        margin-top: 200px;  /* Espacio para la rotación */
+        margin-bottom: 200px;  /* Espacio para la rotación */
+        scale: 0.75;  /* Reducir tamaño en móvil */
+    }
+
+    .infoSection {
+        margin-top: 40px;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    .infoSection .text-content {
+        align-items: center;
+    }
+
+    .infoSection h2 {
+        font-size: 24px;
+    }
+
+    .infoSection p {
+        font-size: 16px;
+    }
+
+    .accordion {
+        width: 100%;
+    }
+
+    .accordion-header {
+        font-size: 25px;
+    }
+}
+
+.white-key.active {
+    background-color: #f0f0f0;
+    transform: translateY(2px);
+    border: #1B3C7C solid 1px;
+}
+
+.black-key.active {
+    background-color: #333;
+    transform: translateY(2px);
+}

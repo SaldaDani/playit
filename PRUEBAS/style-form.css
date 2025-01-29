@@ -1,0 +1,53 @@
+/* Contenedor principal del formulario */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espacio entre filas */
+    max-width: 600px; /* Ancho máximo del formulario */
+    margin: 0 auto; /* Centrar el formulario en la página */
+  }
+  
+  /* Fila para los campos Nombre y Apellidos */
+  .form-row {
+    display: flex;
+    gap: 10px; /* Espacio entre los dos campos */
+  }
+  
+  /* Campos individuales */
+  .form-field {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Asegura que los campos de la fila compartan espacio equitativamente */
+  }
+  
+  /* Estilo para los inputs y textarea */
+  input,
+  textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  /* Botón de envío */
+  button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive para pantallas pequeñas */
+  @media (max-width: 600px) {
+    .form-row {
+      flex-direction: column; /* Apila los campos Nombre y Apellidos en pantallas pequeñas */
+      gap: 15px; /* Ajusta el espacio entre ellos */
+    }
+  }

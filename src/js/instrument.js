@@ -35,7 +35,7 @@ function createPianoSound(frequency) {
 
     // Configuración del filtro
     filter.type = 'lowpass';
-    filter.frequency.value = 3000;
+    filter.frequency.value = 2000;
     filter.Q.value = 1;
 
     // Configuración del compresor
@@ -88,9 +88,9 @@ function createPianoSound(frequency) {
 
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => { // Esperar a que el DOM esté cargado completamente 
     const keys = document.querySelectorAll('.white-key, .black-key');
-    let activeKeys = new Set();
+    let activeKeys = new Set(); //Evita que se reproduzcan muchas veces al mantener 
 
     // Manejar clics del ratón
     keys.forEach(key => {

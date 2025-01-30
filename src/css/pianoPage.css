@@ -14,10 +14,15 @@ body {
     align-items: center;
 }
 
+#pianoHero {
+    background-image: url("/public/img/img_hero_piano.jpg");
+}
+
 .content {
     width: 100%;
     max-width: 1008px;
     margin-top: 40px;
+    padding: 40px 0;
 
 }
 

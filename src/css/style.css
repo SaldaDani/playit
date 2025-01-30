@@ -26,7 +26,6 @@ header {
     /*Arreglar*/
     margin-bottom: 0;
     /*arreglar*/
-
 }
 
 
@@ -42,7 +41,6 @@ header .divider {
 header.bg-color {
     background-color: #0e095c;
 }
-
 
 .nav {
     top: 0%;
@@ -95,14 +93,12 @@ nav .nav-links li a {
     padding-bottom: 5%;
 }
 
-
 .hero p {
     font-size: 3.75rem;
     text-align: center;
     padding: 0.625rem;
     color: white;
     font-weight: 600;
-
 }
 
 .hero .mouse-icon {
@@ -122,7 +118,6 @@ footer {
     border-top: 0.05rem solid white;
     height: 20.313rem;
     width: 100%;
-
 }
 
 footer .logo-and-icons {
@@ -139,20 +134,17 @@ footer .logo {
     width: 18.75rem;
     margin-bottom: -3.125rem;
     /*sabemos que es mala práctica*/
-
 }
 
 footer .socialIcons {
     width: 9.375rem;
     height: 9.375rem;
     object-fit: contain;
-
 }
 
 footer ul {
     display: flex;
     flex-direction: column;
-
 }
 
 footer ul li a {
@@ -162,7 +154,6 @@ footer ul li a {
 
 footer ul li {
     color: white;
-
 }
 
 @media (max-width: 768px)
@@ -176,7 +167,6 @@ footer ul li {
     header .logo {
         width: 30vw;
     }
-
 
     header .divider {
         display: none;

@@ -77,7 +77,6 @@ header .logo {
     /* position: relative; */
     z-index: 1; 
     margin-top: 0px; 
-    background-image: url("/public/img/img_hero_piano.jpg");
     height: 100vh;
     background-size: cover;
     filter: brightness(90%);

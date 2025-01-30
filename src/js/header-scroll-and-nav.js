@@ -1,7 +1,7 @@
   // Selecciona el header y la foto
   const header = document.querySelector('header');
   const foto = document.querySelector('.hero');
-  const divisor = document.querySelector('.divisor')
+  const divisor = document.querySelector('.divider')
 
   const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {

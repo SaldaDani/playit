@@ -7,7 +7,6 @@ body {
     background: linear-gradient(180deg, #04bed4 0%, #0e095c 100%);
     min-height: 100vh;
     margin: 0;
-    padding: 20px;
     font-family: 'Poppins', sans-serif;
     display: flex;
     flex-direction: column;

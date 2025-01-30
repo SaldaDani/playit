@@ -70,14 +70,14 @@ nav .nav-links li a {
 
 header .logo {
     object-fit: contain;
-    width: 20vw; 
+    min-width: 200px; 
 }
 
 .hero {
     /* position: relative; */
     z-index: 1; 
     margin-top: 0px; 
-    background-image: url("/public/img/img_hero_home.webp");
+    background-image: url("/public/img/img_hero_piano.jpg");
     height: 100vh;
     background-size: cover;
     filter: brightness(90%);
@@ -85,7 +85,8 @@ header .logo {
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-
+    width: 100%;
+    padding-bottom: 5%;
 }
 
 
@@ -101,7 +102,6 @@ header .logo {
 .hero .mouse-icon {
     width: 4.438rem;
     height: 4.688rem;
-    padding-bottom: 100px;
 }
 
 main section p {

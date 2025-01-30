@@ -70,12 +70,13 @@ nav .nav-links li a {
 
 header .logo {
     object-fit: contain;
-    width: 20vw; 
+    width: 200px; 
 }
 
 .hero {
     /* position: relative; */
     z-index: 1; 
+    width: 100%;
     margin-top: 0px; 
     background-image: url("/public/img/img_hero_home.webp");
     height: 100vh;

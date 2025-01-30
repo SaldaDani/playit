@@ -4,23 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/css/contact.css">
-    <title>AboutUs</title>
+    <title>contact</title>
 </head>
 <body> 
-    
-
-    <div class="form-container">
-        <h2>Hablamos?</h2>
-        <form>
-            <div class="nombre-apellido">
-                <input type="text" placeholder="Nombre" required>
-                <input type="text" placeholder="Apellidos" required>
-            </div>
-            <input type="email" placeholder="E-mail" required>
-            <textarea placeholder="Mensaje"></textarea>
-            <button type="submit">Enviar</button>
-        </form>
+  
+  <form class="form-container">
+    <h2>Hablamos?</h2>
+    <div class="form-row">
+        <div class="form-field">
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+        </div>
+        <div class="form-field">
+            <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos">
+        </div>
     </div>
-    
+    <div class="form-field">
+        <input type="email" id="email" name="email" placeholder="Email">
+    </div>
+    <div class="form-field">
+        <textarea id="mensaje" name="mensaje" placeholder="Mensaje"></textarea>
+    </div>
+    <div class="form-field">
+        <button type="submit">Enviar</button>
+    </div>
+</form>
+
 </body>
 </html>

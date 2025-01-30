@@ -107,8 +107,6 @@ nav .nav-links li a {
 
 .hero .mouse-icon {
     width: 4.438rem;
-    height: 4.688rem;
-    padding-bottom: 6.25rem;
 }
 
 main section p {
@@ -230,7 +228,7 @@ footer ul li {
         flex-direction: column;
         text-align: center;
         gap: 0;
-        padding-bottom: 15.625rem;
+        padding-bottom: 16.625rem;
     }
 
     footer .logo-and-icons {

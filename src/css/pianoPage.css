@@ -14,6 +14,10 @@ body {
     align-items: center;
 }
 
+#pianoHero {
+    background-image: url("/public/img/img_hero_piano.jpg");
+}
+
 .content {
     width: 100%;
     max-width: 1008px;

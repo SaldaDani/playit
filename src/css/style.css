@@ -70,7 +70,7 @@ nav .nav-links li a {
 
 header .logo {
     object-fit: contain;
-    min-width: 200px; 
+    width: 200px; 
 }
 
 .hero {

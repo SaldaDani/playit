@@ -6,7 +6,7 @@
 }
 
 body {
-    background: linear-gradient(180deg, #04bed4 0%, #0e095c 100%); 
+    background: linear-gradient(180deg, #04bed4 0%, #0e095c 100%);
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
@@ -15,29 +15,33 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0); 
-    transition: background-color 0.3s ease; /* Transición suave */
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.3s ease;
+    /* Transición suave */
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
-    padding: 0rem; /*Arreglar*/
-    margin-bottom: 0; /*arreglar*/
-   
+    padding: 0rem;
+    /*Arreglar*/
+    margin-bottom: 0;
+    /*arreglar*/
+
 }
 
 
 header .divider {
     position: absolute;
-    line-height: 0.188rem; 
+    line-height: 0.188rem;
     width: 100%;
     top: 70%;
-    z-index: -1; /*para priorizar por capas*/
+    z-index: -1;
+    /*para priorizar por capas*/
 }
 
 header.bg-color {
-    background-color: #0e095c; 
-  }
+    background-color: #0e095c;
+}
 
 
 .nav {
@@ -45,8 +49,9 @@ header.bg-color {
     padding-right: 1.25rem;
 }
 
-header .menu-toggle, header .close-menu {
-  display: none;
+header .menu-toggle,
+header .close-menu {
+    display: none;
 }
 
 header nav .nav-links {
@@ -60,7 +65,7 @@ header nav .nav-links li {
     margin-bottom: 0;
     padding-bottom: 0px;
     font-size: 1.6rem;
-   
+
 }
 
 nav .nav-links li a {
@@ -68,17 +73,18 @@ nav .nav-links li a {
     text-decoration: none;
 }
 
-header .logo {
+.logo {
     object-fit: contain;
-    width: 200px; 
+    width: 12.5rem;
 }
 
 .hero {
     /* position: relative; */
-    z-index: 1; 
-    margin-top: 0px; 
-    background-image: url("/public/img/img_hero_piano.jpg");
+    z-index: 1;
+    margin-top: 0px;
+    background-image: url("/public/img/img_hero_home.webp");
     height: 100vh;
+    width: 100%;
     background-size: cover;
     filter: brightness(90%);
     display: flex;
@@ -96,37 +102,91 @@ header .logo {
     padding: 0.625rem;
     color: white;
     font-weight: 600;
-   
+
 }
 
 .hero .mouse-icon {
     width: 4.438rem;
     height: 4.688rem;
+    padding-bottom: 6.25rem;
 }
 
 main section p {
     color: white;
 }
 
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1.25rem;
+    background: linear-gradient(180deg, #0e095c 40%, #04bed4 100%);
+    border-top: 0.05rem solid white;
+    height: 20.313rem;
 
 
+}
 
+footer .logo-and-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 0.05rem solid white;
+    padding-right: 12.5rem;
+    gap: 0rem;
+}
 
+footer .logo {
+    width: 18.75rem;
+    margin-bottom: -3.125rem;
+    /*sabemos que es mala práctica*/
 
-@media (max-width: 768px) /*móviles*/ {
+}
+
+footer .socialIcons {
+    width: 9.375rem;
+    height: 9.375rem;
+    object-fit: contain;
+
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+
+}
+
+footer ul li a {
+    color: white;
+    font-size: 1.6rem;
+}
+
+footer ul li {
+    color: white;
+
+}
+
+@media (max-width: 768px)
+/*móviles*/
+    {
     header {
         background-color: #0e095c;
         height: 8%;
     }
+
     header .logo {
-        width: 30vw; 
+        width: 30vw;
     }
+
 
     header .divider {
         display: none;
     }
-    header .menu-toggle, header .close-menu {
-        display: block; 
+
+    header .menu-toggle,
+    header .close-menu {
+        display: block;
         border: 0;
         font-size: 3rem;
         background-color: transparent;
@@ -135,32 +195,55 @@ main section p {
         cursor: pointer;
     }
 
-    header .nav{
+    header .nav {
         /* display: none;  como solo se puede tener un display usamos visibility*/
         visibility: hidden;
-        opacity: 0; /*para hacer animación*/
+        opacity: 0;
+        /*para hacer animación*/
         display: flex;
         flex-direction: column;
         align-items: end;
         gap: 1rem;
         position: fixed;
-        top: 0; 
+        top: 0;
         right: 0;
-        bottom: 0;/*para que llegue hasta abajo*/
-        background-color: rgb(14, 5, 90, 0.96); /*último valor es opacidad*/
+        bottom: 0;
+        /*para que llegue hasta abajo*/
+        background-color: rgb(14, 5, 90, 0.96);
+        /*último valor es opacidad*/
         padding: 2rem;
         box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.8);
-     }
-     .nav.visible {
+    }
+
+    .nav.visible {
         visibility: visible;
         opacity: 1;
-     }
-     
+    }
 
-     header .nav .nav-links {
+
+    header .nav .nav-links {
         flex-direction: column;
         align-items: end;
     }
 
-}
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 0;
+        padding-bottom: 15.625rem;
+    }
 
+    footer .logo-and-icons {
+        padding: 0;
+        border: 0;
+    }
+
+    footer li {
+        list-style: none;
+    }
+
+    footer ul li a {
+        font-size: 1.5rem;
+    }
+
+}

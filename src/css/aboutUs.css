@@ -77,6 +77,10 @@ section {
     
 }
 
+#aboutUsHero {
+    background-image: url("/public/img/SOBRE_NOSOTROS_HERO.webp");
+}
+
 .card{
     background-color:  #0e095c;;
     border-radius: 30px;

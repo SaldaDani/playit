@@ -80,7 +80,6 @@ nav .nav-links li a {
     /* position: relative; */
     z-index: 1;
     margin-top: 0px;
-    background-image: url("/public/img/img_hero_home.webp");
     height: 100vh;
     width: 100%;
     background-size: cover;

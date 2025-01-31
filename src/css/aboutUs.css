@@ -11,25 +11,6 @@ body {
     font-style: normal;
 }
 
-header{
-    background-image: url(./img/img/SOBRE_NOSOTROS_HERO.webp);
-    height: 800px;
-    
-}
-
-
-header.nav{
-    display: flex;
-    justify-content: space-between;
-}
-nav ul li{
-    justify-content: space-between;
-    color: white;
-    margin-top: 20px;
-    
-    
-}
-
 nav{
     display: flex;
     justify-content: space-between;
@@ -83,6 +64,7 @@ section {
     margin: 0px auto;
     padding: 0px;
     justify-content: center;
+    padding-bottom: 70px;
 }
 
 .grid{

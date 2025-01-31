@@ -77,7 +77,7 @@ section {
     
 }
 
-#aboutUsHero {
+.hero {
     background-image: url("/public/img/SOBRE_NOSOTROS_HERO.webp");
 }
 

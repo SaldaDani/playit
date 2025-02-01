@@ -26,6 +26,7 @@ body {
     color: white;
     font-size: 50px;
     margin-bottom: 50px;
+    font-family: poppins;
   }
   
   /* Fila para los campos Nombre y Apellidos */
@@ -104,6 +105,16 @@ body {
       button {
           width: auto; 
       }
+  }
+
+  .invalid {
+    border: solid 1px red;
+    box-shadow:0 0 10px red ;
+  
+  }
+  
+  .error {
+    color:red solid;
   }
 
 /* Azul oscuro #0e095c */

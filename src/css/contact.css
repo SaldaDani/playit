@@ -1,10 +1,19 @@
 body {
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
     height: 100vh;
     background: linear-gradient(180deg, #04bed4 0%, #0e095c 100%);
     font-family: poppins;
+  }
+
+  .hero {
+    background-image: url("/public/img/contacto_hero.jpg");
+  }
+  
+  .content {
+    padding: 5% 0;
+
   }
   
   /* Contenedor principal del formulario */
@@ -18,6 +27,7 @@ body {
     max-width: 500px;
     margin:  auto;
     height: auto;
+    
   }
   
   /* titulo contenedor */

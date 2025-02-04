@@ -25,7 +25,7 @@ body {
     padding: 40px 0;
     display: flex;
     flex-direction: column;
-
+    align-items: center;
 }
 
 .rotate-screen {
@@ -64,40 +64,52 @@ body {
 }
 
 .piano-container {
-    padding: 20px;
-    margin-bottom: 40px;
+    /* padding: 20px; */
+    /* margin-bottom: 40px; */
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     flex:1;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
 .piano-container::before {
     content: '';
-    width: 97%;
+    width: 99.5%;
     position: absolute;
-    top: 45px;
+    top: 0;
+left: 0%;
+right: 0%;
     height: 20px;
     background-color: white;
     z-index: 2;
     border: #B9B9B9 solid 1px;
+    margin: 0;
 }
 
 #piano {
     height: 200px;
-    padding: 30px 40px;
+    width: 100%;
+    /* padding: 30px 40px; */
     display: flex;
     position: relative;
+padding: 0;
+padding: 0;
     margin-bottom: 120px;
+  
 }
 
 .white-keys {
     display: flex;
+    width: 100%;
 }
 
 .white-key {
-    width: 70px;
+    width: 7.14%;
     height: 300px;
     background-color: white;
     border: 1px solid #B9B9B9;
@@ -147,8 +159,7 @@ body {
 .black-keys-container {
     position: absolute;
     display: flex;
-    top: 30px;
-    left: 42px;
+    width: 100%;
 }
 
 .black-key {
@@ -166,19 +177,20 @@ body {
     background-color: #333;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.4),
                 0 3px 3px rgba(0, 0, 0, 0.2);
+
 }
 /* Alineando las teclas negras de ambas octavas */
-.black-key:nth-child(1) { left: 45px; }  /* Do# */
-.black-key:nth-child(2) { left: 115px; }  /* Re# */
-.black-key:nth-child(3) { left: 255px; } /* Fa# */
-.black-key:nth-child(4) { left: 325px; } /* Sol# */
-.black-key:nth-child(5) { left: 395px; } /* La# */
+.black-key:nth-child(1) { left: 4.8%; }  /* Do# */
+.black-key:nth-child(2) { left: 12.2%; }  /* Re# */
+.black-key:nth-child(3) { left: 26%; } /* Fa# */
+.black-key:nth-child(4) { left: 33.5%; } /* Sol# */
+.black-key:nth-child(5) { left: 40.5%; } /* La# */
 /* Segunda octava */
-.black-key:nth-child(6) { left: 535px; } /* Do# */
-.black-key:nth-child(7) { left: 605px; } /* Re# */
-.black-key:nth-child(8) { left: 745px; } /* Fa# */
-.black-key:nth-child(9) { left: 815px; } /* Sol# */
-.black-key:nth-child(10) { left: 885px; } /* La# */
+.black-key:nth-child(6) { left: 54.7%; } /* Do# */
+.black-key:nth-child(7) { left: 62%; } /* Re# */
+.black-key:nth-child(8) { left: 76%; } /* Fa# */
+.black-key:nth-child(9) { left: 83.5%; } /* Sol# */
+.black-key:nth-child(10) { left: 90.5%; } /* La# */
 
 @media (max-width: 768px){
     .content {
@@ -188,9 +200,7 @@ body {
         align-items: center;
     }
 
-    .piano-container::before {
-       
-    }
+
 
     .piano-container {
         scale: 0.75;  /* Reducir tamaño en móvil */
@@ -202,37 +212,7 @@ body {
         flex-direction: column;
     }
 
-    .infoSection {
-        margin-top: 40px;
-        flex-direction: column;
-        text-align: center;
-        width: 100%;
-    }
-
-    .infoSection .text-content {
-        align-items: center;
-        justify-content: center;
-       
-    }
-
-    .infoSection h2 {
-        font-size: 24px;
-        text-align: center;
-        width: 100%;
-    }
-
-    .infoSection p {
-        font-size: 16px;
-    }
-
-    .accordion {
-        width: 100%;
-    }
-
-    .accordion-header {
-        font-size: 25px;
-    }
-
+  
 
 }
 
@@ -278,35 +258,7 @@ body {
         padding: 20px;
         color: #f0f0f0;    }
 
-    .infoSection {
-        margin-top: 40px;
-        flex-direction: column;
-        text-align: center;
-        width: 100%;
-    }
-
-    .infoSection .text-content {
-        align-items: center;
-        justify-content: center;
-    }
-
-    .infoSection h2 {
-        font-size: 24px;
-        text-align: center;
-        width: 100%;
-    }
-
-    .infoSection p {
-        font-size: 16px;
-    }
-
-    .accordion {
-        width: 100%;
-    }
-
-    .accordion-header {
-        font-size: 25px;
-    }
+ 
 }
 
 @media (orientation: landscape){
@@ -320,9 +272,7 @@ body {
         display: none;
     }
 
-    /* .piano-container::before {
-        display: none;
-    } */
+  
 }
 
 
@@ -331,9 +281,7 @@ body {
         display: none;
     }
 
-    /* .piano-container::before {
-        display: none;
-    } */
+ 
 
     .rotate-screen {
         display: flex;

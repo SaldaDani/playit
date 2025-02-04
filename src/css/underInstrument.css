@@ -1,6 +1,6 @@
 .infoSection {
     justify-self: center;
-    width: 85%;
+    width: 80%;
     display: flex;
     align-items: center;
     color: white;
@@ -21,13 +21,11 @@
 
 .infoSection p {
     font-size: 24px;
-    margin: 5px 0 0 0;
 }
 
 .infoSection .text-content {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
 }
 
 .accordion {
@@ -117,11 +115,11 @@
     }
 
     .infoSection h2 {
-        font-size: 24px;
+        font-size: 35px;
     }
 
     .infoSection p {
-        font-size: 16px;
+        font-size: 20px;
     }
 
     .accordion {
@@ -130,5 +128,15 @@
 
     .accordion-header {
         font-size: 25px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){ 
+    .infoSection h2 {
+        font-size: 50px;
+    }
+
+    .infoSection p {
+        font-size: 30px;
     }
 }

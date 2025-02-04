@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const nameField = document.querySelector("[name=nombre]");
     const lastNameField = document.querySelector("[name=apellidos]");
     const emailField = document.querySelector("[name=email]");
+    const text_area = document.querySelector("[name=mensaje]");
   
     
     const showError = (field, message) => {
@@ -48,6 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
     nameField.addEventListener("blur", validateEmptyField);
     lastNameField.addEventListener("blur", validateEmptyField);
+    text_area.addEventListener("blur", validateEmptyField);
     emailField.addEventListener("blur", (e) => {
       validateEmptyField(e);
       validateEmailFormat(e);

@@ -12,7 +12,7 @@ body {
   }
   
   .content {
-    padding: 5% 0;
+    padding: 5% 5%;
 
   }
   
@@ -60,6 +60,8 @@ body {
     border-radius: 5px;
     font-size: 16px;
     width:100%;
+    font-family: poppins;
+    font-weight: 600;
   }
   
   /* Botón de envío */
@@ -124,7 +126,9 @@ body {
   }
   
   .error {
-    color:red solid;
+    color:rgb(156, 16, 16);
+    font-weight: 500;
+    
   }
 
 /* Azul oscuro #0e095c */

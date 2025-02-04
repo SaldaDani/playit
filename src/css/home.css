@@ -224,10 +224,12 @@ main {
     .schoolDescription h2 {
         font-size: 1.8rem;
         padding: 0 1.563rem 0 1.563rem;
+        margin-top: 0;
+        margin-bottom: 30px;
     }
 
     .schoolDescriptionText {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         padding: 3.125rem 0.8rem 1.25rem 0.8rem;
         text-align: center;
     }
@@ -244,7 +246,7 @@ main {
     }
 
     .aprendeJugandoText p {
-        font-size: 1.6rem;
+        font-size: 1.2rem;
         padding: 0 0;
         text-align: center;
 
@@ -252,6 +254,109 @@ main {
 
     .aprendeJugandoText h2 {
         font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .aprendeJugando img {
+        width: 5.8rem;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .schoolDescription {
+        margin-bottom: 0;
+    }
+
+    .schoolDescriptionContent {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 0.2rem;
+        margin-bottom: 0;
+    }
+
+    .schoolDescription h2 {
+        font-size: 2rem;
+        padding: 0 1.563rem 0 1.563rem;
+        margin-top: 2rem;
+        margin-bottom: 30px;
+    }
+
+    .schoolDescriptionText {
+        font-size: 1.5rem;
+        padding: 3.125rem 0.8rem 1.25rem 0.8rem;
+        text-align: center;
+    }
+
+    .schoolDescriptionImage {
+        width: 22rem;
+    }
+    .instrumentsCarousel {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        padding-bottom: 0rem;
+        margin-bottom: 0;
+        gap: 10px;
+        margin-bottom: 2rem;
+    }
+
+    .carouselImages {
+        width: 24rem;
+        height: 22rem;
+        margin-bottom: 0;
+    }
+
+    .selected {
+        width: 30rem;
+        height: 22rem;
+    }
+
+    .carouselImages::after {
+        content: "";
+        position: absolute;
+        bottom: 110%;
+        left: 0%;
+        right: 0%;
+        width: 100%;
+        height: 20%;
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+        transform: scaleY(-1);
+        opacity: 0.5;
+        border-radius: 1.875rem;
+        filter: blur(0.313rem);
+
+    }
+
+    .icon-and-text p {
+        font-size: 1.5rem;
+    }
+
+    .home-icons {
+        width: 3rem;
+        height: 3rem;
+    }
+
+
+
+    .aprendeJugando {
+        flex-wrap: wrap;
+        padding-top: 3rem;
+        gap: 1rem
+    }
+
+    .aprendeJugandoText p {
+        font-size: 1.6rem;
+        padding: 0 0;
+        text-align: center;
+
+    }
+
+    .aprendeJugandoText h2 {
+        font-size: 2rem;
         text-align: center;
     }
 

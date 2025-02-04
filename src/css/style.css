@@ -88,7 +88,6 @@ nav .nav-links li a {
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    width: 100%;
     padding-bottom: 5%;
 }
 
@@ -102,6 +101,7 @@ nav .nav-links li a {
 
 .hero .mouse-icon {
     width: 4.438rem;
+    margin-bottom: 20px;
 }
 
 
@@ -112,7 +112,6 @@ footer {
     gap: 1.25rem;
     background: linear-gradient(180deg, #0e095c 40%, #04bed4 100%);
     border-top: 0.05rem solid white;
-    height: 20.313rem;
     width: 100%;
 }
 
@@ -122,14 +121,14 @@ footer .logo-and-icons {
     justify-content: center;
     align-items: center;
     border-right: 0.05rem solid white;
-    padding-right: 12.5rem;
+    padding-right: 5%;
     gap: 0rem;
 }
 
 footer .logo {
     width: 18.75rem;
     margin-bottom: -3.125rem;
-    /*sabemos que es mala práctica*/
+    /*sabemos que es mala práctica pero la foto está mal recortada*/
 }
 
 footer .socialIcons {
@@ -214,7 +213,7 @@ footer ul li {
         flex-direction: column;
         text-align: center;
         gap: 0;
-        padding-bottom: 16.625rem;
+        padding-bottom: 40px;
     }
 
     footer .logo-and-icons {
@@ -230,4 +229,27 @@ footer ul li {
         font-size: 1.5rem;
     }
 
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 0;
+        padding-bottom: 40px;
+    }
+
+    footer .logo-and-icons {
+        padding: 0;
+        border: 0;
+    }
+
+    footer li {
+        list-style: none;
+    }
+
+    footer ul li a {
+        font-size: 2rem;
+    }
 }

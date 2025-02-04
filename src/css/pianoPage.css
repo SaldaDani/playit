@@ -23,6 +23,8 @@ body {
     max-width: 1008px;
     margin-top: 40px;
     padding: 40px 0;
+    display: flex;
+    flex-direction: column;
 
 }
 
@@ -172,10 +174,85 @@ body {
 
     .infoSection .text-content {
         align-items: center;
+        justify-content: center;
+       
     }
 
     .infoSection h2 {
         font-size: 24px;
+        text-align: center;
+    }
+
+    .infoSection p {
+        font-size: 16px;
+    }
+
+    .accordion {
+        width: 100%;
+    }
+
+    .accordion-header {
+        font-size: 25px;
+    }
+
+
+}
+
+.white-key.active {
+    background-color: #f0f0f0;
+    transform: translateY(2px);
+    border: #1B3C7C solid 1px;
+}
+
+.black-key.active {
+    background-color: #333;
+    transform: translateY(2px);
+}
+
+@media (min-width: 768px) and (max-width: 1024px) { 
+    .piano-container {
+        transform: rotate(90deg);
+        margin-top: 200px;  /* Espacio para la rotación */
+        margin-bottom: 200px;  /* Espacio para la rotación */
+        scale: 1;  /* Reducir tamaño en móvil */
+        width: 100%;
+    }
+    
+    .content {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .piano-container::before {
+        right: 60px;
+        left: 60px;
+    }
+
+    .piano-container {
+        transform: rotate(90deg);
+        margin-top: 200px;  /* Espacio para la rotación */
+        margin-bottom: 200px;  /* Espacio para la rotación */
+        scale: 0.75;  /* Reducir tamaño en móvil */
+    }
+
+    .infoSection {
+        margin-top: 40px;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    .infoSection .text-content {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .infoSection h2 {
+        font-size: 24px;
+        text-align: center;
+
     }
 
     .infoSection p {
@@ -190,14 +267,5 @@ body {
         font-size: 25px;
     }
 }
+   
 
-.white-key.active {
-    background-color: #f0f0f0;
-    transform: translateY(2px);
-    border: #1B3C7C solid 1px;
-}
-
-.black-key.active {
-    background-color: #333;
-    transform: translateY(2px);
-}

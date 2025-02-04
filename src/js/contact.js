@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
    
     const form = document.querySelector("form");
     const nameField = document.querySelector("[name=nombre]");
-    const lastNameField = document.querySelector("[name=apellidos]");
+    const lastNameField = document.querySelector("[name=apellido]");
     const emailField = document.querySelector("[name=email]");
     const text_area = document.querySelector("[name=mensaje]");
   
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const field = e.target;
       const fieldValue = field.value;
       if (fieldValue.trim() === "") {
-        showError(field, `Necesita ${field.name}`);
+        showError(field, `El ${field.name} es obligatorio`);
       } else {
         clearError(field);
       }

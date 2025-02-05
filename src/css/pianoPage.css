@@ -242,10 +242,6 @@ padding: 0;
         align-items: center;
     }
 
-    .piano-container::before {
-       
-    }
-
     .rotate-screen {
         display: flex;
         flex-direction: column;

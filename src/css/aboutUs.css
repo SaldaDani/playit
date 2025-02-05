@@ -74,6 +74,7 @@ section {
     grid-gap: 25px;
     margin-top: 150px;
     justify-content: center;
+    line-height: 30px;
     
 }
 
@@ -99,6 +100,7 @@ section {
     justify-items: center;
     margin-top: 130px;
     margin-left: 220px;
+    line-height: 30px;
         
 }
 
@@ -115,9 +117,10 @@ section {
     width: 220px;
     border-radius: 100%;
     object-fit: cover;
-    border: 9px solid #0e095c ;    
+    border: 9px solid #0e095c ;   
     
 }
+
 
 .card h2{
     margin-top: -120px;
@@ -133,12 +136,15 @@ section {
     font-family: "Poppins", serif;
     font-weight: 500;
     font-style: normal;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .bottom{
     position: relative;
-    width: 220px;
+    width: 40px;
     bottom: 30px;
-   
+
 }
+
+
+

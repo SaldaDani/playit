@@ -97,6 +97,17 @@ main {
     margin-bottom: 5rem;
 }
 
+.carouselImages::before {
+    content: "";
+    position: absolute;
+    border-radius: 1.875rem;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+  }
+
 .carouselImages::after {
     content: "";
     position: absolute;
@@ -114,6 +125,10 @@ main {
 .selected {
     width: 37.5rem;
     height: 28.125rem;
+}
+
+.selected::before {
+    background: rgba(0, 0, 0, 0.1); /* Más claro para la imagen seleccionada */
 }
 
 .selected .icon-and-text {

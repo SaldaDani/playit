@@ -229,7 +229,6 @@ padding: 0;
 
 @media (min-width: 768px) and (max-width: 1024px){ 
     .piano-container {
-        margin-top: -90px;  /* Espacio para la rotación */
         margin-bottom: 10px;  /* Espacio para la rotación */
         scale: 0.8;  /* Reducir tamaño en móvil */
         width: 100%;
@@ -241,10 +240,6 @@ padding: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-
-    .piano-container::before {
-       
     }
 
     .rotate-screen {

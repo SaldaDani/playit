@@ -1,13 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-* {
-    padding: 0;
-    margin: 0;
-}
-
 body {
     background: linear-gradient(180deg, #04bed4 0%, #0e095c 100%);
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -29,7 +26,7 @@ header {
 }
 
 
-header .divider {
+.divider {
     position: absolute;
     line-height: 0.188rem;
     width: 100%;
@@ -47,18 +44,18 @@ header.bg-color {
     padding-right: 1.25rem;
 }
 
-header .menu-toggle,
-header .close-menu {
+.menu-toggle,
+.close-menu {
     display: none;
 }
 
-header nav .nav-links {
+.nav-links {
     display: flex;
     list-style: none;
     gap: 1.875rem;
 }
 
-header nav .nav-links li {
+.nav-links li {
     color: white;
     margin-bottom: 0;
     padding-bottom: 0px;
@@ -66,7 +63,7 @@ header nav .nav-links li {
 
 }
 
-nav .nav-links li a {
+.nav-links a {
     color: white;
     text-decoration: none;
     font-weight: 600;
@@ -98,6 +95,7 @@ nav .nav-links li a {
 
 .hero p {
     font-size: 3.75rem;
+    z-index: 2;
     text-align: center;
     padding: 0.625rem;
     color: white;
@@ -106,7 +104,7 @@ nav .nav-links li a {
     -webkit-text-stroke: 0.5px black;
 }
 
-.hero .mouse-icon {
+.mouse-icon {
     width: 4.438rem;
     margin-bottom: 20px;
     animation: bouncing-arrows 1s infinite ease-in-out;
@@ -139,7 +137,7 @@ footer {
     width: 100%;
 }
 
-footer .logo-and-icons {
+.logo-and-icons {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -155,7 +153,7 @@ footer .logo {
     /*sabemos que es mala práctica pero la foto está mal recortada*/
 }
 
-footer .socialIcons {
+.socialIcons {
     width: 9.375rem;
     height: 9.375rem;
     object-fit: contain;
@@ -166,7 +164,7 @@ footer ul {
     flex-direction: column;
 }
 
-footer ul li a {
+footer ul a {
     color: white;
     font-size: 1.6rem;
 }
@@ -187,12 +185,12 @@ footer ul li {
         width: 30vw;
     }
 
-    header .divider {
+    .divider {
         display: none;
     }
 
-    header .menu-toggle,
-    header .close-menu {
+    .menu-toggle,
+    .close-menu {
         display: block;
         border: 0;
         font-size: 3rem;
@@ -202,11 +200,10 @@ footer ul li {
         cursor: pointer;
     }
 
-    header .nav {
+    .nav {
         /* display: none;  como solo se puede tener un display usamos visibility*/
         visibility: hidden;
         opacity: 0;
-        /*para hacer animación*/
         display: flex;
         flex-direction: column;
         align-items: end;
@@ -215,9 +212,7 @@ footer ul li {
         top: 0;
         right: 0;
         bottom: 0;
-        /*para que llegue hasta abajo*/
         background-color: rgb(14, 5, 90, 0.96);
-        /*último valor es opacidad*/
         padding: 2rem;
         box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.8);
     }
@@ -228,7 +223,7 @@ footer ul li {
     }
 
 
-    header .nav .nav-links {
+    .nav-links {
         flex-direction: column;
         align-items: end;
     }
@@ -240,7 +235,7 @@ footer ul li {
         padding-bottom: 40px;
     }
 
-    footer .logo-and-icons {
+    .logo-and-icons {
         padding: 0;
         border: 0;
     }
@@ -249,7 +244,7 @@ footer ul li {
         list-style: none;
     }
 
-    footer ul li a {
+    footer ul a {
         font-size: 1.5rem;
     }
 
@@ -264,7 +259,7 @@ footer ul li {
         padding-bottom: 40px;
     }
 
-    footer .logo-and-icons {
+    .logo-and-icons {
         padding: 0;
         border: 0;
     }
@@ -273,7 +268,7 @@ footer ul li {
         list-style: none;
     }
 
-    footer ul li a {
+    footer ul a {
         font-size: 2rem;
     }
 }

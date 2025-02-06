@@ -2,34 +2,35 @@ document.addEventListener("DOMContentLoaded", () => {
    
     const form = document.querySelector("form");
     const nameField = document.querySelector("[name=nombre]");
-    const lastNameField = document.querySelector("[name=apellidos]");
+    const lastNameField = document.querySelector("[name=apellido]");
     const emailField = document.querySelector("[name=email]");
     const text_area = document.querySelector("[name=mensaje]");
   
     
     const showError = (field, message) => {
       field.classList.add("invalid");
-      if (field.nextElementSibling) {
-        field.nextElementSibling.classList.add("error");
-        field.nextElementSibling.innerText = message;
+      const errorSpan = field.parentElement.querySelector("span"); 
+      if (errorSpan) {
+          errorSpan.classList.add("error");
+          errorSpan.innerText = message;
       }
-    };
+  };
   
     
     const clearError = (field) => {
       field.classList.remove("invalid");
-      if (field.nextElementSibling) {
-        field.nextElementSibling.classList.remove("error");
-        field.nextElementSibling.innerText = "";
+      const errorSpan = field.parentElement.querySelector("span");
+      if (errorSpan) {
+          errorSpan.classList.remove("error");
+          errorSpan.innerText = "";
       }
-    };
-  
+  };
     
     const validateEmptyField = (e) => {
       const field = e.target;
       const fieldValue = field.value;
       if (fieldValue.trim() === "") {
-        showError(field, `Necesita ${field.name}`);
+        showError(field, `El ${field.name} es obligatorio`);
       } else {
         clearError(field);
       }
@@ -60,6 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
       validateEmptyField({ target: nameField });
       validateEmptyField({ target: lastNameField });
+      validateEmptyField({ target: text_area }); 
       validateEmptyField({ target: emailField });
       validateEmailFormat({ target: emailField });
   

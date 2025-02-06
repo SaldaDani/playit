@@ -95,6 +95,7 @@ header.bg-color {
 
 .hero p {
     font-size: 3.75rem;
+    z-index: 2;
     text-align: center;
     padding: 0.625rem;
     color: white;

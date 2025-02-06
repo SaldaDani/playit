@@ -8,7 +8,18 @@ body {
   }
 
   .hero {
-    background-image: url("/public/img/contact-us-foto.png");
+    background-image: url("/public/img/contact-hero.jpg");
+  }
+  .hero::before {
+    content: "";
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2); /* Oscuridad del 30% */
+    pointer-events: none; /* Permite interactuar con el contenido debajo */
   }
   
   .content {

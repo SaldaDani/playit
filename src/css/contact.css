@@ -35,7 +35,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    max-width: 500px;
+    max-width: 700px;
     margin:  auto;
     height: auto;
     
@@ -73,6 +73,10 @@ body {
     width:100%;
     font-family: poppins;
     font-weight: 600;
+  }
+
+  #mensaje {
+    resize: none;
   }
   
   /* Botón de envío */

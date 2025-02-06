@@ -93,7 +93,7 @@ body {
   
   /*redimensionar text area*/
   textarea {
-      resize: vertical; 
+      resize: none; 
       min-height: 100px;
   }
   

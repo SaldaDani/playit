@@ -24,6 +24,10 @@ body {
     background-image: url("/public/img/img_hero_guitarra.webp");
 }
 
+#saxoHero {
+    background-image: url("/public/img/img_home_saxofon.png");
+}
+
 .inConstructionImg {
     height: 600px;
     margin-bottom: 20px;

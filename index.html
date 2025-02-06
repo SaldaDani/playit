@@ -17,18 +17,18 @@
         <nav class="nav">
             <button class="close-menu"><i class="bi bi-x"></i></button>
             <ul class="nav-links">
-                <li><a href="">Inicio</a></li>
-                <li><a href="">Sobre nosotros</a></li>
-                <li><a href="">Contacto</a></li>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/pages/about-us.html">Sobre nosotros</a></li>
+                <li><a href="/pages/contact.html">Contacto</a></li>
             </ul>
         </nav>
         <hr class="divider">
     </header>
     <div class="hero">
         <p>Ahora tu academia en casa</p>
-        <img class="mouse-icon" src="/public/img/FLECHAS_HERO.png">
+        <img class="mouse-icon" id="mouse-icon" src="/public/img/FLECHAS_HERO.png">
     </div>
-    <main>
+    <main id="mainContent">
         <section class="schoolDescription">
             <h2>Aplicamos las nuevas tecnologías al aprendizaje</h2>
             <div class="schoolDescriptionContent">
@@ -42,7 +42,7 @@
 
         <section class="aboutInstruments">
             <div class="instrumentsCarousel">
-                <a href="">
+                <a href="/pages/piano.html">
                     <article class="carouselImages selected" id="piano-carousel">
                         <div class="icon-and-text">
                             <img src="/public/img/piano_galeria.png" class="home-icons">
@@ -50,14 +50,14 @@
                         </div>
                     </article>
                 </a>
-                <a href="">
+                <a href="/pages/guitar.html">
                     <article class="carouselImages" id="guitar-carousel">
                         <div class="icon-and-text"><img src="public/img/icono_guitarra.png" class="home-icons">
                             <p>Guitarra</p>
                         </div>
                     </article>
                 </a>
-                <a href="">
+                <a href="/pages/drums.html">
                     <article class="carouselImages" id="drums-carousel">
                         <div class="icon-and-text">
                             <img src="/public/img/icono_bateria.png" class="home-icons">
@@ -65,7 +65,7 @@
                         </div>
                     </article>
                 </a>
-                <a href="">
+                <a href="/pages/saxo.html">
                     <article class="carouselImages" id="saxophone-carousel">
                         <div class="icon-and-text">
                             <img src="public/img/icono_saxofon.png" class="home-icons">
@@ -87,7 +87,9 @@
     <footer>
         <div class="logo-and-icons">
             <img src="/public/img/logo_blanco.png" class="logo">
-            <img src="/public/img/SET_ICONOS_3D_PK.png" class="socialIcons">
+            <a href="">
+                <img src="/public/img/SET_ICONOS_3D_PK.png" class="socialIcons">
+            </a>
         </div>
         <ul>
             <li><a href="/pages/guitar.html">Toca la guitarra online</a></li>

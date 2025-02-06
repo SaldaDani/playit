@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/src/css/contact.css">
     <link rel="stylesheet" href="/src/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <title>contact</title>
+    <title>Contacto</title>
 </head>
 
 <body>
@@ -18,43 +18,46 @@
         <nav class="nav">
             <button class="close-menu"><i class="bi bi-x"></i></button>
             <ul class="nav-links">
-                <li><a href="">Inicio</a></li>
-                <li><a href="">Sobre nosotros</a></li>
-                <li><a href="">Contacto</a></li>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/pages/about-us.html">Sobre nosotros</a></li>
+                <li><a href="/pages/contact.html">Contacto</a></li>
             </ul>
         </nav>
         <hr class="divider">
     </header>
     <div class="hero" id="pianoHero">
-        <p>Aprende piano desde casa</p>
-        <img class="mouse-icon" src="/public/img/FLECHAS_HERO.png">
+        <p>Contacto</p>
+        <img class="mouse-icon" id="mouse-icon" src="/public/img/FLECHAS_HERO.png">
     </div>
-    <section class="content">
-        <form class="form-container" id="formulario">
-            <h2>Hablamos?</h2>
-            <div class="form-row">
+    <main id="mainContent">
+        <section class="content">
+            <form class="form-container" id="formulario">
+                <h2>¿Hablamos?</h2>
+                <div class="form-row">
+                    <div class="form-field">
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+                        <span></span>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos">
+                        <span></span>
+                    </div>
+                </div>
                 <div class="form-field">
-                    <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+                    <input type="email" id="email" name="email" placeholder="Email">
                     <span></span>
                 </div>
                 <div class="form-field">
-                    <input type="text" id="apellidos" name="apellido" placeholder="Apellidos">
+                    <textarea id="mensaje" name="mensaje" placeholder="Mensaje"></textarea>
                     <span></span>
                 </div>
-            </div>
-            <div class="form-field">
-                <input type="email" id="email" name="email" placeholder="Email">
-                <span></span>
-            </div>
-            <div class="form-field">
-                <textarea id="mensaje" name="mensaje" placeholder="Mensaje"></textarea>
-                <span></span>
-            </div>
-            <div class="form-field">
-                <button type="submit">Enviar</button>
-            </div>
-        </form>
-    </section>
+                <div class="form-field">
+                    <button type="submit">Enviar</button>
+
+                </div>
+            </form>
+        </section>
+    </main>
     <footer>
         <div class="logo-and-icons">
             <img src="/public/img/logo_blanco.png" class="logo">

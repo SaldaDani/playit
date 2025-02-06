@@ -30,3 +30,6 @@ menuToggle.addEventListener("click", () => {
 closeMenu.addEventListener("click", () => {
   sideNav.classList.remove("visible");
 });
+
+document.getElementById('mouse-icon').addEventListener('click', function() {
+document.getElementById('mainContent').scrollIntoView({ behavior: 'smooth' });})

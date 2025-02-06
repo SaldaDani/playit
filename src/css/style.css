@@ -69,6 +69,10 @@ header nav .nav-links li {
 nav .nav-links li a {
     color: white;
     text-decoration: none;
+    font-weight: 600;
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
+    -webkit-text-stroke: 0.5px black;
+    /* Borde de 2px negro */
 }
 
 .logo {
@@ -82,14 +86,14 @@ nav .nav-links li a {
     margin-top: 0px;
     height: 100vh;
     width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
     filter: brightness(90%);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    width: 100%;
-    padding-bottom: 5%;
 }
 
 .hero p {
@@ -98,15 +102,32 @@ nav .nav-links li a {
     padding: 0.625rem;
     color: white;
     font-weight: 600;
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
+    -webkit-text-stroke: 0.5px black;
 }
 
 .hero .mouse-icon {
     width: 4.438rem;
+    margin-bottom: 20px;
+    animation: bouncing-arrows 1s infinite ease-in-out;
+    cursor: pointer;
+
 }
 
-main section p {
-    color: white;
+@keyframes bouncing-arrows {
+
+    0%,
+    100% {
+        transform: translateY(0);
+        /* Posición inicial */
+    }
+
+    50% {
+        transform: translateY(10px);
+        /* Rebote hacia arriba */
+    }
 }
+
 
 footer {
     display: flex;
@@ -115,7 +136,6 @@ footer {
     gap: 1.25rem;
     background: linear-gradient(180deg, #0e095c 40%, #04bed4 100%);
     border-top: 0.05rem solid white;
-    height: 20.313rem;
     width: 100%;
 }
 
@@ -125,14 +145,14 @@ footer .logo-and-icons {
     justify-content: center;
     align-items: center;
     border-right: 0.05rem solid white;
-    padding-right: 12.5rem;
+    padding-right: 5%;
     gap: 0rem;
 }
 
 footer .logo {
     width: 18.75rem;
     margin-bottom: -3.125rem;
-    /*sabemos que es mala práctica*/
+    /*sabemos que es mala práctica pero la foto está mal recortada*/
 }
 
 footer .socialIcons {
@@ -217,7 +237,7 @@ footer ul li {
         flex-direction: column;
         text-align: center;
         gap: 0;
-        padding-bottom: 16.625rem;
+        padding-bottom: 40px;
     }
 
     footer .logo-and-icons {
@@ -233,4 +253,27 @@ footer ul li {
         font-size: 1.5rem;
     }
 
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 0;
+        padding-bottom: 40px;
+    }
+
+    footer .logo-and-icons {
+        padding: 0;
+        border: 0;
+    }
+
+    footer li {
+        list-style: none;
+    }
+
+    footer ul li a {
+        font-size: 2rem;
+    }
 }

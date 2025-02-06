@@ -1,0 +1,137 @@
+body {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(180deg, #04bed4 0%, #0e095c 100%);
+    font-family: poppins;
+  }
+
+  .hero {
+    background-image: url("/public/img/contacto_hero.jpg");
+  }
+  
+  .content {
+    padding: 5% 5%;
+
+  }
+  
+  /* Contenedor principal del formulario */
+  .form-container {
+    background-color: #04bed4;
+    padding: 5%;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin:  auto;
+    height: auto;
+    
+  }
+  
+  /* titulo contenedor */
+  .form-container h2 {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    margin-bottom: 50px;
+    font-family: poppins;
+  }
+  
+  /* Fila para los campos Nombre y Apellidos */
+  .form-row {
+    display: flex;
+    gap: 30px;
+  }
+  
+  /* Campos individuales */
+  .form-field {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  
+  /* Estilo para los inputs y textarea */
+  input,
+  textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width:100%;
+    font-family: poppins;
+    font-weight: 600;
+  }
+  
+  /* Botón de envío */
+  button {
+    padding: 10px 60px;
+    background-color: #0e095c;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    align-self: flex-end;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /*redimensionar text area*/
+  textarea {
+      resize: vertical; 
+      min-height: 100px;
+  }
+  
+  /*para pantallas pequeñas*/
+  @media (max-width: 600px) {
+      .form-container {
+          padding: 10%;
+      }
+  
+      .form-row {
+          flex-direction: column;
+          gap: 15px;
+      }
+  
+      input,
+      textarea {
+          padding: 10px;
+      }
+  
+      button {
+          padding: 10px 15px;
+      }
+  }
+  
+  /*para pantallas medianas*/
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+      .form-container {
+          max-width: 70%; 
+      }
+  
+      button {
+          width: auto; 
+      }
+  }
+
+  .invalid {
+    border: solid 1px red;
+    box-shadow:0 0 10px red ;
+  
+  }
+  
+  .error {
+    color:rgb(156, 16, 16);
+    font-weight: 500;
+    
+  }
+
+/* Azul oscuro #0e095c */
+/* Azul claro #04bed4 */
+/* fuentes: poppins */
+

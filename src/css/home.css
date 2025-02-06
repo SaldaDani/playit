@@ -1,4 +1,367 @@
 body {
     display: flex;
     flex-direction: column;
+
+
+    align-items: center;
+    justify-content: center;
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+}
+
+.hero {
+    background-image: url("/public/img/img_hero_home.webp");
+}
+
+.schoolDescription {
+    color: white;
+    margin: 2.5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.schoolDescription h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 6.25rem 0 6.25rem 0;
+}
+
+.schoolDescriptionContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    margin: 0 0 3.125rem 0;
+    gap: 6.25rem;
+
+}
+
+.schoolDescriptionImage {
+    flex: 1;
+    width: 31.25rem;
+    height: 31.25rem;
+    object-fit: contain;
+}
+
+.schoolDescriptionText {
+    flex: 1;
+    font-size: 1.875rem;
+    padding: 0rem;
+    text-align: center;
+}
+
+.aboutInstruments {
+    margin: 3.125rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.instrumentsCarousel {
+    display: flex;
+    justify-content: center;
+    gap: 0.938rem;
+    padding-bottom: 1.25rem;
+}
+
+#piano-carousel {
+    background-image: url("/public/img/img_hero_piano.jpg");
+}
+
+#guitar-carousel {
+    background-image: url("/public/img/img_hero_guitarra.webp");
+}
+
+#drums-carousel {
+    background-image: url("/public/img/img_hero_bateria.webp");
+}
+
+#saxophone-carousel {
+    background-image: url("/public/img/img_home_saxofon.png");
+}
+
+.carouselImages {
+    width: 12.5rem;
+    height: 28.125rem;
+    border-radius: 1.875rem;
+    background-size: cover;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    margin-bottom: 5rem;
+}
+
+.carouselImages::after {
+    content: "";
+    position: absolute;
+    top: 95%;
+    right: 3%;
+    width: 100%;
+    height: 20%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+    transform: scaleY(-1);
+    opacity: 0.2;
+    border-radius: 1.875rem;
+    filter: blur(0.313rem)
+}
+
+.selected {
+    width: 37.5rem;
+    height: 28.125rem;
+}
+
+.selected .icon-and-text {
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+.home-icons {
+    width: 5rem;
+    height: 5rem;
+}
+
+.icon-and-text {
+    color: white;
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
+    font-size: 2.813rem;
+    opacity: 0;
+}
+
+
+.aprendeJugando {
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin: 2.5rem 0 6.25rem 0;
+
+
+}
+
+.aprendeJugandoText h2 {
+    font-size: 3.125rem;
+}
+
+.aprendeJugandoText p {
+    font-size: 1.875rem;
+    margin-top: 0.625rem;
+}
+
+.aprendeJugando img {
+    width: 12.5rem;
+}
+
+@media (max-width: 768px) {
+
+
+    .instrumentsCarousel {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        padding-bottom: 0rem;
+        margin-bottom: 0;
+        gap: 10px;
+        margin-bottom: 2rem;
+    }
+
+    .carouselImages {
+        width: 18rem;
+        height: 6rem;
+        margin-bottom: 0;
+    }
+
+    .selected {
+        width: 18rem;
+        height: 18rem;
+    }
+
+    .carouselImages::after {
+        content: "";
+        position: absolute;
+        bottom: 110%;
+        left: 0%;
+        right: 0%;
+        width: 100%;
+        height: 20%;
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+        transform: scaleY(-1);
+        opacity: 0.5;
+        border-radius: 1.875rem;
+        filter: blur(0.313rem);
+
+    }
+
+    .icon-and-text p {
+        font-size: 1.5rem;
+    }
+
+    .home-icons {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .schoolDescription {
+        margin-bottom: 0;
+    }
+
+    .schoolDescriptionContent {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 0.2rem;
+        margin-bottom: 0;
+    }
+
+    .schoolDescription h2 {
+        font-size: 1.8rem;
+        padding: 0 1.563rem 0 1.563rem;
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    .schoolDescriptionText {
+        font-size: 1.3rem;
+        padding: 3.125rem 0.8rem 1.25rem 0.8rem;
+        text-align: center;
+    }
+
+    .schoolDescriptionImage {
+        width: 18.75rem;
+    }
+
+
+    .aprendeJugando {
+        flex-wrap: wrap;
+        margin: 1.875rem 0;
+        gap: 1rem
+    }
+
+    .aprendeJugandoText p {
+        font-size: 1.2rem;
+        padding: 0 0;
+        text-align: center;
+
+    }
+
+    .aprendeJugandoText h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .aprendeJugando img {
+        width: 5.8rem;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .schoolDescription {
+        margin-bottom: 0;
+    }
+
+    .schoolDescriptionContent {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 0.2rem;
+        margin-bottom: 0;
+    }
+
+    .schoolDescription h2 {
+        font-size: 2rem;
+        padding: 0 1.563rem 0 1.563rem;
+        margin-top: 2rem;
+        margin-bottom: 30px;
+    }
+
+    .schoolDescriptionText {
+        font-size: 1.5rem;
+        padding: 3.125rem 0.8rem 1.25rem 0.8rem;
+        text-align: center;
+    }
+
+    .schoolDescriptionImage {
+        width: 22rem;
+    }
+    .instrumentsCarousel {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        padding-bottom: 0rem;
+        margin-bottom: 0;
+        gap: 10px;
+        margin-bottom: 2rem;
+    }
+
+    .carouselImages {
+        width: 24rem;
+        height: 22rem;
+        margin-bottom: 0;
+    }
+
+    .selected {
+        width: 30rem;
+        height: 22rem;
+    }
+
+    .carouselImages::after {
+        content: "";
+        position: absolute;
+        bottom: 110%;
+        left: 0%;
+        right: 0%;
+        width: 100%;
+        height: 20%;
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+        transform: scaleY(-1);
+        opacity: 0.5;
+        border-radius: 1.875rem;
+        filter: blur(0.313rem);
+
+    }
+
+    .icon-and-text p {
+        font-size: 1.5rem;
+    }
+
+    .home-icons {
+        width: 3rem;
+        height: 3rem;
+    }
+
+
+
+    .aprendeJugando {
+        flex-wrap: wrap;
+        padding-top: 3rem;
+        gap: 1rem
+    }
+
+    .aprendeJugandoText p {
+        font-size: 1.6rem;
+        padding: 0 0;
+        text-align: center;
+
+    }
+
+    .aprendeJugandoText h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .aprendeJugando img {
+        width: 5.8rem;
+    }
+
 }

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Play.it</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="/src/css/style.css"> <!-- estilo general-->
+    <link rel="stylesheet" href="/src/css/style.css">
     <link rel="stylesheet" href="/src/css/home.css">
 </head>
 
@@ -17,97 +17,79 @@
         <nav class="nav">
             <button class="close-menu"><i class="bi bi-x"></i></button>
             <ul class="nav-links">
-                <li><a href="">Inicio</a></li>
-                <li><a href="">Sobre nosotros</a></li>
-                <li><a href="">Contacto</a></li>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/pages/about-us.html">Sobre nosotros</a></li>
+                <li><a href="/pages/contact.html">Contacto</a></li>
             </ul>
         </nav>
         <hr class="divider">
     </header>
     <div class="hero">
         <p>Ahora tu academia en casa</p>
-        <img class="mouse-icon" src="/public/img/FLECHAS_HERO.png">
+        <img class="mouse-icon" id="mouse-icon" src="/public/img/FLECHAS_HERO.png">
     </div>
-    <main>
+    <main id="mainContent">
         <section class="schoolDescription">
-            <p>En el corazón de un valle olvidado por el tiempo, existía un bosque del que nadie se atrevía a hablar.
-                Sus árboles eran tan altos que parecían rozar el cielo, y entre sus ramas, el viento susurraba secretos
-                que nadie entendía. La gente del pueblo cercano aseguraba que al caer la noche, luces brillantes
-                danzaban entre los troncos, como si seres mágicos vivieran allí.
-
-                Una niña llamada Clara, fascinada por los cuentos que escuchaba, decidió aventurarse una tarde para
-                descubrir la verdad. Armada con una linterna y un cuaderno, se adentró en el bosque. Al principio, todo
-                parecía normal: pájaros cantando y hojas crujiendo bajo sus pies. Pero pronto, la luz comenzó a
-                desvanecerse y un silencio inquietante llenó el aire.
-
-                De repente, Clara vio una pequeña figura luminosa flotando frente a ella. Era una criatura diminuta, con
-                alas que brillaban como el arcoíris. "¿Quién eres?", preguntó Clara con asombro. La criatura no
-                respondió con palabras, pero señaló un árbol enorme con una puerta tallada. Nadie sabe qué pasó después,
-                porque</p>
+            <h2>Aplicamos las nuevas tecnologías al aprendizaje</h2>
+            <div class="schoolDescriptionContent">
+                <p class="schoolDescriptionText">¡Descubre el arte de la música desde casa! En nuestra academia online,
+                    te ofrecemos clases personalizadas de instrumentos como guitarra, piano, batería y más, impartidas
+                    por músicos expertos. Aprende a tu ritmo y lleva tu pasión al siguiente nivel, estés donde estés.
+                </p>
+                <img src="public/img/guitarrista_home.png" class="schoolDescriptionImage">
+            </div>
         </section>
-        <section class="instrumentCarousel">
-            <p>La vida está llena de grandes eventos que marcan nuestra historia, pero ¿qué hay de los pequeños
-                momentos? Esos instantes en los que todo parece detenerse por un segundo. Como cuando el sol de la
-                mañana entra por la ventana y calienta tu cara mientras tomas tu primer café. O cuando encuentras un
-                libro olvidado en un estante y te das cuenta de que estaba esperando a ser leído.
 
-                La felicidad no siempre viene con grandes anuncios; a menudo se esconde en los detalles. En la sonrisa
-                inesperada de un extraño, en el olor a pan recién horneado o en el sonido de la lluvia golpeando la
-                ventana. Son esos pequeños detalles los que dan sentido a nuestros días, aunque a veces no los valoremos
-                como deberíamos.
+        <section class="aboutInstruments">
+            <div class="instrumentsCarousel">
+                <a href="/pages/piano.html">
+                    <article class="carouselImages selected" id="piano-carousel">
+                        <div class="icon-and-text">
+                            <img src="/public/img/piano_galeria.png" class="home-icons">
+                            <p>Piano</p>
+                        </div>
+                    </article>
+                </a>
+                <a href="/pages/guitar.html">
+                    <article class="carouselImages" id="guitar-carousel">
+                        <div class="icon-and-text"><img src="public/img/icono_guitarra.png" class="home-icons">
+                            <p>Guitarra</p>
+                        </div>
+                    </article>
+                </a>
+                <a href="/pages/drums.html">
+                    <article class="carouselImages" id="drums-carousel">
+                        <div class="icon-and-text">
+                            <img src="/public/img/icono_bateria.png" class="home-icons">
+                            <p>Batería</p>
+                        </div>
+                    </article>
+                </a>
+                <a href="/pages/saxo.html">
+                    <article class="carouselImages" id="saxophone-carousel">
+                        <div class="icon-and-text">
+                            <img src="public/img/icono_saxofon.png" class="home-icons">
+                            <p>Saxofón</p>
+                        </div>
+                    </article>
+                </a>
+            </div>
+            <div class="aprendeJugando">
+                <img src="/public/img/icono_nota_pk.png">
+                <div class="aprendeJugandoText">
+                    <h2>Aprende jugando!</h2>
+                    <p>Sólo tienes que hacer clic sobre el instrumento que más te guste y a tocar!</p>
+                </div>
+            </div>
 
-                Piensa en la última vez que viste un atardecer. Quizás fue algo rutinario, pero si te detuviste a
-                observarlo, seguramente sentiste una conexión con algo más grande que tú. La vida, como un mosaico, está
-                hecha de pequeñas piezas. Cada momento cuenta, y si aprendemos a ver la magia en lo cotidiano, tal vez
-                descubramos que la felicidad siempre estuvo ahí, escondida entre las pequeñas cosas.</p>
-            <p>La vida está llena de grandes eventos que marcan nuestra historia, pero ¿qué hay de los pequeños
-                momentos? Esos instantes en los que todo parece detenerse por un segundo. Como cuando el sol de la
-                mañana entra por la ventana y calienta tu cara mientras tomas tu primer café. O cuando encuentras un
-                libro olvidado en un estante y te das cuenta de que estaba esperando a ser leído.
-
-                La felicidad no siempre viene con grandes anuncios; a menudo se esconde en los detalles. En la sonrisa
-                inesperada de un extraño, en el olor a pan recién horneado o en el sonido de la lluvia golpeando la
-                ventana. Son esos pequeños detalles los que dan sentido a nuestros días, aunque a veces no los valoremos
-                como deberíamos.
-
-                Piensa en la última vez que viste un atardecer. Quizás fue algo rutinario, pero si te detuviste a
-                observarlo, seguramente sentiste una conexión con algo más grande que tú. La vida, como un mosaico, está
-                hecha de pequeñas piezas. Cada momento cuenta, y si aprendemos a ver la magia en lo cotidiano, tal vez
-                descubramos que la felicidad siempre estuvo ahí, escondida entre las pequeñas cosas.</p>
-            <p>La vida está llena de grandes eventos que marcan nuestra historia, pero ¿qué hay de los pequeños
-                momentos? Esos instantes en los que todo parece detenerse por un segundo. Como cuando el sol de la
-                mañana entra por la ventana y calienta tu cara mientras tomas tu primer café. O cuando encuentras un
-                libro olvidado en un estante y te das cuenta de que estaba esperando a ser leído.
-
-                La felicidad no siempre viene con grandes anuncios; a menudo se esconde en los detalles. En la sonrisa
-                inesperada de un extraño, en el olor a pan recién horneado o en el sonido de la lluvia golpeando la
-                ventana. Son esos pequeños detalles los que dan sentido a nuestros días, aunque a veces no los valoremos
-                como deberíamos.
-
-                Piensa en la última vez que viste un atardecer. Quizás fue algo rutinario, pero si te detuviste a
-                observarlo, seguramente sentiste una conexión con algo más grande que tú. La vida, como un mosaico, está
-                hecha de pequeñas piezas. Cada momento cuenta, y si aprendemos a ver la magia en lo cotidiano, tal vez
-                descubramos que la felicidad siempre estuvo ahí, escondida entre las pequeñas cosas.</p>
-            <p>La vida está llena de grandes eventos que marcan nuestra historia, pero ¿qué hay de los pequeños
-                momentos? Esos instantes en los que todo parece detenerse por un segundo. Como cuando el sol de la
-                mañana entra por la ventana y calienta tu cara mientras tomas tu primer café. O cuando encuentras un
-                libro olvidado en un estante y te das cuenta de que estaba esperando a ser leído.
-
-                La felicidad no siempre viene con grandes anuncios; a menudo se esconde en los detalles. En la sonrisa
-                inesperada de un extraño, en el olor a pan recién horneado o en el sonido de la lluvia golpeando la
-                ventana. Son esos pequeños detalles los que dan sentido a nuestros días, aunque a veces no los valoremos
-                como deberíamos.
-
-                Piensa en la última vez que viste un atardecer. Quizás fue algo rutinario, pero si te detuviste a
-                observarlo, seguramente sentiste una conexión con algo más grande que tú. La vida, como un mosaico, está
-                hecha de pequeñas piezas. Cada momento cuenta, y si aprendemos a ver la magia en lo cotidiano, tal vez
-                descubramos que la felicidad siempre estuvo ahí, escondida entre las pequeñas cosas.</p>
         </section>
     </main>
     <footer>
         <div class="logo-and-icons">
             <img src="/public/img/logo_blanco.png" class="logo">
-            <img src="/public/img/SET_ICONOS_3D_PK.png" class="socialIcons">
+            <a href="">
+                <img src="/public/img/SET_ICONOS_3D_PK.png" class="socialIcons">
+            </a>
         </div>
         <ul>
             <li><a href="/pages/guitar.html">Toca la guitarra online</a></li>
@@ -124,6 +106,7 @@
 
     </footer>
     <script src="src/js/header-scroll-and-nav.js"></script>
+    <script src="src/js/home.js"></script>
 </body>
 
 </html>

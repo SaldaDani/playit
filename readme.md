@@ -1,6 +1,6 @@
 # 🎵 PlayIt - Interactive Music Learning Platform
 
-![PlayIt Banner](/public/img/img_hero_home.webp)
+![PlayIt Banner](/public/img/logo_blanco.png)
 
 ## 📝 Descripción  
 **Play.it** es una plataforma web que lleva la educación musical directamente a tu navegador. Aprende y practica diferentes instrumentos a través de una interfaz interactiva y atractiva, diseñada tanto para principiantes como para músicos intermedios.

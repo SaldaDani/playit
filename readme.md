@@ -93,7 +93,7 @@ playit/
 
  ## 👥 Team
 - **Lorena Martínez:** Desarrollo de index.html, footer y header común.
-- **Omar Gutiérrez:** Desarrollo de la página "About Us".
+- **Omar Gutiérrez:** Desarrollo de la página "Sobre nosotros".
 - **Dani Saldarriaga:** Desarrollo de la página de contacto.
 - **Nico Fernández:** Desarrollo de las páginas de instrumentos.
 - **Soraya Rivas:** Diseño y prototipado en Figma.

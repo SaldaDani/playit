@@ -52,7 +52,7 @@
 ### Instalación
 1. Clona el repositorio
 ```bash
-git clone https://github.com/yourusername/playit.git
+git clone https://github.com/SaldaDani/playit.git
 ```
 2. Navega al directorio del proyecto
 ```bash

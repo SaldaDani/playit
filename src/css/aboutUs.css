@@ -29,7 +29,7 @@ section {
 }
 
 .hero {
-    background-image: url("/public/img/SOBRE_NOSOTROS_HERO.webp");
+    background-image: url("./public/img/SOBRE_NOSOTROS_HERO.webp");
 }
 
 .card{

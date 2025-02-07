@@ -15,7 +15,7 @@ main {
 }
 
 .hero {
-    background-image: url("/public/img/img_hero_home.webp");
+    background-image: url("./public/img/img_hero_home.webp");
 }
 
 .schoolDescription {
@@ -71,19 +71,19 @@ main {
 }
 
 #piano-carousel {
-    background-image: url("/public/img/img_hero_piano.jpg");
+    background-image: url("./public/img/img_hero_piano.jpg");
 }
 
 #guitar-carousel {
-    background-image: url("/public/img/img_hero_guitarra.webp");
+    background-image: url("./public/img/img_hero_guitarra.webp");
 }
 
 #drums-carousel {
-    background-image: url("/public/img/img_hero_bateria.webp");
+    background-image: url("./public/img/img_hero_bateria.webp");
 }
 
 #saxophone-carousel {
-    background-image: url("/public/img/img_home_saxofon.png");
+    background-image: url("./public/img/img_home_saxofon.png");
 }
 
 .carouselImages {

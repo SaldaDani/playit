@@ -30,7 +30,41 @@
 
 .accordion {
     width: 100%;
+    max-width: 1008px;
     margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .content {
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .accordion {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .accordion-item {
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .content {
+        width: 100%;
+        padding: 0 2rem;
+    }
+
+    .accordion {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .accordion-item {
+        width: 100%;
+    }
 }
 
 .accordion-item {
@@ -82,7 +116,7 @@
 .accordion .accordion-item.active .accordion-content {
     max-height: 2000px;
     opacity: 1;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 
 }
 
@@ -128,6 +162,12 @@
 
     .accordion-header {
         font-size: 25px;
+        height: 60px;
+    }
+
+    .accordion-header::before {
+        width: 35px;
+        height: 35px;
     }
 }
 
@@ -138,5 +178,10 @@
 
     .infoSection p {
         font-size: 30px;
+    }
+
+    .accordion-header::before {
+        width: 45px;
+        height: 45px;
     }
 }

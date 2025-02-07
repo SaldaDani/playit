@@ -1,41 +1,5 @@
-.body, html {
-    background-color: #04bed4;
-    font-family: 'poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: "Poppins", serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-nav{
-    display: flex;
-    justify-content: space-between;
-}
-nav ul{
-    display: flex;
-    gap: 20px;
-    margin-right: 10px;
-    
-
-}
-
-.nav-bar hr{
-    margin-top: -28px;
-}
-
-header img{
-    width: 200px;
-    height: auto;
-}
-
-
 section {
-    display: grid;
-    place-items: center;
+    justify-content: center;
     text-align: center;
     color: white;
     font-family: "Poppins-regular", serif;
@@ -46,20 +10,7 @@ section {
    
 }
 
-.flechas {
-    width: 50px;
-    height: auto;
-    margin-bottom: -10px;
- }
-        
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    
-}
-
-.content{
+.container{
     width: 80%;   
     margin: 0px auto;
     padding: 0px;
@@ -69,11 +20,11 @@ section {
 
 .grid{
     display: flex;
-    flex-wrap: wrap;
     width: 100%;
     grid-gap: 25px;
     margin-top: 150px;
     justify-content: center;
+    line-height: 30px;
     
 }
 
@@ -85,26 +36,9 @@ section {
     background-color:  #0e095c;;
     border-radius: 30px;
     width: 30%;
-    height: 290px;
+    height: auto;
     padding: 20px;
-    justify-content: space-between;
     
-}
-
-
-.grid-2{
-    display: flex;
-    width: 100%;
-    grid-gap: 25px;
-    justify-items: center;
-    margin-top: 130px;
-    margin-left: 220px;
-        
-}
-
-.grid-2 .card{
-    width: 38%;
-    grid-gap: 25px
     
 }
 
@@ -115,16 +49,17 @@ section {
     width: 220px;
     border-radius: 100%;
     object-fit: cover;
-    border: 9px solid #0e095c ;    
+    border: 9px solid #0e095c ;   
     
 }
+
 
 .card h2{
     margin-top: -120px;
     font-family: "Poppins", serif;
     font-weight: 500;
     font-style: normal;
-    font-size: 22px;
+    font-size: 30px;
 }
 .card h3{
     color: rgb(84, 164, 239);
@@ -132,13 +67,86 @@ section {
     margin-bottom: 60px;
     font-family: "Poppins", serif;
     font-weight: 500;
-    font-style: normal;
-    font-size: 18px;
+    font-style: italic;
+    font-size: 22px;
 }
 
 .bottom{
     position: relative;
-    width: 220px;
+    width: 60px;
     bottom: 30px;
-   
+
+}
+
+@media (max-width: 768px) {
+    .container{
+        width: 100%;   
+        margin: 0px auto;
+        padding: 0px;
+        justify-content: center;
+        padding-bottom: 70px;
+    }
+    
+    .grid{
+        flex-direction: column;
+        width: 100%;
+        gap: 130px;
+        margin-top: 150px;
+        justify-content: center;
+        line-height: 30px;
+        align-items: center;
+        
+    
+    }
+
+    .top{
+        height: 150px;
+        width: 150px;
+         
+        
+    }
+
+    .card{
+        width: 60%;
+        
+        
+        
+        
+    }
+
+    #top-grid {
+        margin-bottom: 130px;
+    }
+    #bottom-grid {
+        margin-top: 0;
+
+    }
+
+    .bottom{
+        width: 45px;
+    }
+
+    
+    
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .card{
+        width: 40%;
+        
+        
+    }
+
+    .top{
+        width: 220px;
+        height: 220px;
+    }
+
+    .bottom{
+        width: 55px;
+    }
+
+
 }

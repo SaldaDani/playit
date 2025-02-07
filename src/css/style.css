@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-
 * {
-    padding: 0;
+    box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
 
 body {
     background: linear-gradient(180deg, #04bed4 0%, #0e095c 100%);
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -98,6 +100,7 @@ header.bg-color {
 
 .hero p {
     font-size: 3.75rem;
+    z-index: 2;
     text-align: center;
     padding: 0.625rem;
     color: white;

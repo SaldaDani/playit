@@ -15,7 +15,7 @@ body {
 }
 
 #pianoHero {
-    background-image: url("/public/img/img_hero_piano.jpg");
+    background-image: url("../../public/img/img_hero_piano.jpg");
 }
 
 .content {

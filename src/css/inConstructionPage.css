@@ -17,15 +17,15 @@ body {
 }
 
 #drumsHero {
-    background-image: url("./public/img/img_hero_bateria.webp");
+    background-image: url("/public/img/img_hero_bateria.webp");
 }
 
 #guitarHero {
-    background-image: url("./public/img/img_hero_guitarra.webp");
+    background-image: url("/public/img/img_hero_guitarra.webp");
 }
 
 #saxoHero {
-    background-image: url("./public/img/img_home_saxofon.png");
+    background-image: url("/public/img/img_home_saxofon.png");
 }
 
 .inConstructionImg {

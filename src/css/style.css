@@ -19,15 +19,12 @@ header {
     align-items: center;
     background-color: rgba(0, 0, 0, 0);
     transition: background-color 0.3s ease;
-    /* Transición suave */
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
     padding: 0rem;
-    /*Arreglar*/
     margin-bottom: 0;
-    /*arreglar*/
 }
 
 
@@ -37,7 +34,6 @@ header {
     width: 100%;
     top: 70%;
     z-index: -1;
-    /*para priorizar por capas*/
 }
 
 header.bg-color {
@@ -74,7 +70,6 @@ header.bg-color {
     font-weight: 600;
     text-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
     -webkit-text-stroke: 0.5px black;
-    /* Borde de 2px negro */
 }
 
 .logo {
@@ -83,7 +78,6 @@ header.bg-color {
 }
 
 .hero {
-    /* position: relative; */
     z-index: 1;
     margin-top: 0px;
     height: 100vh;
@@ -122,12 +116,10 @@ header.bg-color {
     0%,
     100% {
         transform: translateY(0);
-        /* Posición inicial */
     }
 
     50% {
         transform: translateY(10px);
-        /* Rebote hacia arriba */
     }
 }
 
@@ -155,7 +147,6 @@ footer {
 footer .logo {
     width: 18.75rem;
     margin-bottom: -3.125rem;
-    /*sabemos que es mala práctica pero la foto está mal recortada*/
 }
 
 .socialIcons {
@@ -206,7 +197,6 @@ footer ul li {
     }
 
     .nav {
-        /* display: none;  como solo se puede tener un display usamos visibility*/
         visibility: hidden;
         opacity: 0;
         display: flex;

@@ -128,7 +128,7 @@ main {
 }
 
 .selected::before {
-    background: rgba(0, 0, 0, 0.1); /* Más claro para la imagen seleccionada */
+    background: rgba(0, 0, 0, 0.1);
 }
 
 .selected .icon-and-text {

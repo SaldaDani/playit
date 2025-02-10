@@ -7,7 +7,7 @@ const observer = new IntersectionObserver(
     entries.forEach((entry) => {
       if (!entry.isIntersecting) {
         header.classList.add("bg-color");
-        divisor.style.opacity = 0; //quitas raya
+        divisor.style.opacity = 0;
       } else {
         header.classList.remove("bg-color");
         divisor.style.opacity = 1;

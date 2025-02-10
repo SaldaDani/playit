@@ -7,61 +7,63 @@ section {
     font-style: normal;
     margin-top: 500px;
     font-size: 35px;
-   
+
 }
 
-.container{
-    width: 80%;   
+.container {
+    width: 80%;
     margin: 0px auto;
     padding: 0px;
     justify-content: center;
     padding-bottom: 70px;
 }
 
-.grid{
+.grid {
     display: flex;
     width: 100%;
     grid-gap: 25px;
     margin-top: 150px;
     justify-content: center;
     line-height: 30px;
-    
+
 }
 
 .hero {
     background-image: url("../../public/img/SOBRE_NOSOTROS_HERO.webp");
 }
 
-.card{
-    background-color:  #0e095c;;
+.card {
+    background-color: #0e095c;
+    ;
     border-radius: 30px;
     width: 30%;
     height: auto;
     padding: 20px;
-    
-    
+
+
 }
 
-.top{
+.top {
     position: relative;
     top: -130px;
     height: 220px;
     width: 220px;
     border-radius: 100%;
     object-fit: cover;
-    border: 9px solid #0e095c ;   
-    
+    border: 9px solid #0e095c;
+
 }
 
 
-.card h2{
+.card h2 {
     margin-top: -120px;
     font-family: "Poppins", serif;
     font-weight: 500;
     font-style: normal;
     font-size: 30px;
 }
-.card h3{
+
+.card h3 {
     color: rgb(84, 164, 239);
     margin-top: 20px;
     margin-bottom: 60px;
@@ -71,7 +73,7 @@ section {
     font-size: 22px;
 }
 
-.bottom{
+.bottom {
     position: relative;
     width: 60px;
     bottom: 30px;
@@ -83,15 +85,15 @@ section {
 }
 
 @media (max-width: 768px) {
-    .container{
-        width: 100%;   
+    .container {
+        width: 100%;
         margin: 0px auto;
         padding: 0px;
         justify-content: center;
         padding-bottom: 70px;
     }
-    
-    .grid{
+
+    .grid {
         flex-direction: column;
         width: 100%;
         gap: 130px;
@@ -99,56 +101,57 @@ section {
         justify-content: center;
         line-height: 30px;
         align-items: center;
-        
-    
+
+
     }
 
-    .top{
+    .top {
         height: 150px;
         width: 150px;
-         
-        
+
+
     }
 
-    .card{
+    .card {
         width: 60%;
-        
-        
-        
-        
+
+
+
+
     }
 
     #top-grid {
         margin-bottom: 130px;
     }
+
     #bottom-grid {
         margin-top: 0;
 
     }
 
-    .bottom{
+    .bottom {
         width: 45px;
     }
 
-    
-    
+
+
 
 }
 
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    .card{
+    .card {
         width: 40%;
-        
-        
+
+
     }
 
-    .top{
+    .top {
         width: 220px;
         height: 220px;
     }
 
-    .bottom{
+    .bottom {
         width: 55px;
     }
 

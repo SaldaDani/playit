@@ -1,4 +1,4 @@
-const div = document.querySelectorAll(".carouselImages"); //hacemos que esos elementos de la clase html esten en un array
+const div = document.querySelectorAll(".carouselImages"); 
 
 //móvil:
 if (window.matchMedia("(max-width: 768px)").matches) { 

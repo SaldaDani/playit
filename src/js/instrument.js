@@ -78,21 +78,21 @@ function createPianoSound(frequency) {
     masterGain.gain.linearRampToValueAtTime(0.7, now + 0.02);  // Attack
     masterGain.gain.linearRampToValueAtTime(0.3, now + 0.08);  // Decay
     masterGain.gain.linearRampToValueAtTime(0.2, now + 0.1);   // Sustain
-    masterGain.gain.linearRampToValueAtTime(0, now + 0.8);     // Release reducido de 2 a 0.8
+    masterGain.gain.linearRampToValueAtTime(0, now + 0.8);     // Release
 
     // Iniciar y detener osciladores
     oscillators.forEach(({ oscillator }) => {
         oscillator.start(now);
-        oscillator.stop(now + 0.8);  // Reducido de 2 a 0.8 para coincidir con el release
+        oscillator.stop(now + 0.8);
     });
 
 }
 
-document.addEventListener('DOMContentLoaded', () => { // Esperar a que el DOM esté cargado completamente 
+document.addEventListener('DOMContentLoaded', () => {
     const keys = document.querySelectorAll('.white-key, .black-key');
-    let activeKeys = new Set(); //Evita que se reproduzcan muchas veces al mantener 
+    let activeKeys = new Set();
 
-    // Manejar clics del ratón
+
     keys.forEach(key => {
         key.addEventListener('mousedown', () => {
             const note = key.getAttribute('data-note');
@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => { // Esperar a que el DOM es
         });
     });
 
-    // Manejar pulsaciones de teclado
+ 
     document.addEventListener('keydown', (e) => {
         const keycode = e.keyCode;
         if (!activeKeys.has(keycode)) {

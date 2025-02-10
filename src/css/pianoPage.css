@@ -64,8 +64,6 @@ body {
 }
 
 .piano-container {
-    /* padding: 20px; */
-    /* margin-bottom: 40px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -94,7 +92,6 @@ right: 0%;
 #piano {
     height: 200px;
     width: 100%;
-    /* padding: 30px 40px; */
     display: flex;
     position: relative;
 padding: 0;
@@ -179,7 +176,6 @@ padding: 0;
                 0 3px 3px rgba(0, 0, 0, 0.2);
 
 }
-/* Alineando las teclas negras de ambas octavas */
 .black-key:nth-child(1) { left: 4.8%; }  /* Do# */
 .black-key:nth-child(2) { left: 12.2%; }  /* Re# */
 .black-key:nth-child(3) { left: 26%; } /* Fa# */
@@ -203,7 +199,7 @@ padding: 0;
 
 
     .piano-container {
-        scale: 0.75;  /* Reducir tamaño en móvil */
+        scale: 0.75;
         display: none;
     }
 
@@ -232,8 +228,8 @@ padding: 0;
 
 @media (min-width: 768px) and (max-width: 1024px){ 
     .piano-container {
-        margin-bottom: 10px;  /* Espacio para la rotación */
-        scale: 0.8;  /* Reducir tamaño en móvil */
+        margin-bottom: 10px;
+        scale: 0.8;
         width: 100%;
         display: none;
     }
